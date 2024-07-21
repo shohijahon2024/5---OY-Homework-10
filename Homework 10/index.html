@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="car-form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="model" placeholder="Model" required>
+        <br>
+        <button type="submit">Add Car</button>
+    </form>
+    
+    <div id="car-list"></div>
+
+    <div class='pre-loader'>
+        <img class='loading-gif' alt='loading' src="https://media.giphy.com/media/RHEqKwRZDwFKE/giphy.gif?cid=ecf05e478a2m5caoaiqgt9bwis702bo0yvb8oddgerdrqwi2&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+    </div>
+    <script type='text/javascript'>
+        window.addEventListener('load', function () {
+            document.querySelector('.pre-loader').className += ' hidden';
+        });
+    </script>
+
+    
+    <script type="module" src="./script/app.js"></script>
+
+</body>
+</html>
